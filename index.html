@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Alimentação Natural para Cães</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!--fixo no menu superior?-->
+    <div>
+        <h2>Selecione o tipo de Alimentação Natural desejada:</h2>
+        <button>Crua com ossos</button>
+        <button>Crua sem ossos</button>
+        <button>Cozida</button>
+    </div>
+    <!--fixo no menu superior?-->
+    <!-- mostrar porcentagem dos grupos de alimentos e, ao clicar neles, mostrar lista de alimentos sem restrições-->
+
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome">
+    <br>
+    <label for="idade">Idade:</label>
+    <input type="number" name="idade" max="30" placeholder="ex: 4">
+    <br>
+    <label for="peso">Peso (Kg):</label>
+    <input type="number" name="peso" max="100" placeholder="ex: 22">
+    <br>
+    <label for="pesoIdeal">Peso Ideal(Kg):</label>
+    <input type="number" name="pesoIdeal" id="pesoIdeal" max="100" placeholder="ex: 12">
+
+    <p>Porte (baseado no peso ideal do seu cão adulto):</p>
+    <input type="checkbox" name="porte-miniatura1" id="porte-miniatura1">
+    <label for="porte-miniatura1">Porte miniatura (até 3 kg) / 7 a 10%</label>
+    <br>
+    <input type="checkbox" name="porte-miniatura2" id="porte-miniatura2">
+    <label for="porte-miniatura2">Porte miniatura (3 e 5kg) / 5 a 6%</label>
+    <br>
+    <input type="checkbox" name="porte-pequeno" id="porte-pequeno">
+    <label for="porte-pequeno">Porte pequeno (5 e 10kg) / 4 a 6%</label>
+    <br>
+    <input type="checkbox" name="porte-medio" id="porte-medio">
+    <label for="porte-medio">Porte médio (10 a 25kg) / 4 a 5%</label>
+    <br>
+    <input type="checkbox" name="porte-grande1" id="porte-grande1">
+    <label for="porte-grande1">Porte grande (25 a 35kg) / 4 a 5%</label>
+    <br>
+    <input type="checkbox" name="porte-grande2" id="porte-grande2">
+    <label for="porte-grande2">Porte grande (35 a 42kg) /  3 a 4%</label>
+    <br>
+    <input type="checkbox" name="porte-gigante" id="porte-gigante">
+    <label for="porte-gigante">Porte gigante (42kg ou acima) / 3 a 4%</label>
+
+    <br><br>
+
+    <input type="checkbox" name="estomago-sensivel" id="estomago-sensivel">
+    <label for="estomago-sensivel">Seu cão tem o estômago sensível? Vomita aquela espuminha ou bile de vez em quando?</label>
+
+    <br>
+
+    <input type="checkbox" name="dor-articulacoes" id="dor-articulacoes">
+    <label for="dor-articulacoes">Seu cão tem dor nas articulações?</label>
+
+    <br>
+
+    <button class="QuantidadeBtn">Calcular Quantidade</button>
+
+    <div class="quantidadePorDia">
+        <span class="comidaPorDia" id="comidaPorDia">(Peso ideal) x (% indicada para o porte dele) = quantidade total de alimentos por dia</span>
+        <span class="frutasPorDia" id="frutasPorDia">10 a 15% do total de alimentos/dia (complemento dos vegetais ou petisco)</span>
+    </div>
+
+
+    <h2>Gerador de dieta</h2>
+
+    <h2>Sugestão de Compra:</h2>
+
+
+
+
+    <h2>Aviso:</h2>
+    <p>Os alimentos, métricas para os cálculos e XXX foram retiradas do site Cachorro Verde.</p>
+    <p>Essa ferramente tem o objetivo de ser um facilitador para o cálulo da dieta.</p>
+    <p>Aqui estão apenas algumas informações. O guia completo se encontra </p>
+    <p>Não deixe de consultar seu veterinário para saber se o seu amigo cão já pode começar com a alimentação natural</p>
+
+    <br>
+
+    <p>A Alimentação Natural cozida não é indicada nos casos:</p>
+    <ul>
+        <li>Diabetes</li>
+        <li>Doença hepática (incluindo shunt portossistêmico)</li>
+        <li>Doença renal crônica ou aguda</li>
+        <li>Cálculos (“pedras”) urinários</li>
+        <li>Doença cardíaca</li>
+        <li>Gastrite (vômitos crônicos)</li>
+        <li>Enterite ou colite (inflamação intestinal que causa alteração frequente das fezes)</li>
+        <li>Pancreatite</li>
+        <li>Insuficiência pancreática exócrina</li>
+        <li>Se o cão estiver muito debilitado por qualquer outro motivo.</li>
+    </ul>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
