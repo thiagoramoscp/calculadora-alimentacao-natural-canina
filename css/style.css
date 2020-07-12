@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.navbar {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    border: 1px solid #000;
+    margin: 0;
+}
+
+.alimentacaoBtns {}
+
+.tipoAlimentacaoBtn {}

@@ -11,11 +11,13 @@
 <body>
 
     <!--fixo no menu superior?-->
-    <div>
-        <h2>Selecione o tipo de Alimentação Natural desejada:</h2>
-        <button>Crua com ossos</button>
-        <button>Crua sem ossos</button>
-        <button>Cozida</button>
+    <div class="navbar">
+        <h2 class="titulo">Selecione o tipo de Alimentação Natural desejada:</h2>
+        <div class="alimentacaoBtns">
+            <button class="tipoAlimentacaoBtn" id="aNCruaComOssos">Crua com ossos</button>
+            <button class="tipoAlimentacaoBtn" id="aNCruaSemOssos">Crua sem ossos</button>
+            <button class="tipoAlimentacaoBtn" id="aNCozida">Cozida</button>
+        </div>
     </div>
     <!--fixo no menu superior?-->
     <!-- mostrar porcentagem dos grupos de alimentos e, ao clicar neles, mostrar lista de alimentos sem restrições-->
@@ -26,7 +28,7 @@
     <label for="idade">Idade:</label>
     <input type="number" name="idade" max="30" placeholder="ex: 4">
     <br>
-    <label for="peso">Peso (Kg):</label>
+    <label for="peso">Peso Atual(Kg):</label>
     <input type="number" name="peso" max="100" placeholder="ex: 22">
     <br>
     <label for="pesoIdeal">Peso Ideal(Kg):</label>
@@ -54,6 +56,9 @@
     <input type="checkbox" name="porte-gigante" id="porte-gigante">
     <label for="porte-gigante">Porte gigante (42kg ou acima) / 3 a 4%</label>
 
+    <br><br>
+
+    <a href="https://www.cachorroverde.com.br/caes/dieta-cozida-para-caes/">Dúvidas do quanto devo escolher? Leia aqui.</a>
     <br><br>
 
     <input type="checkbox" name="estomago-sensivel" id="estomago-sensivel">
